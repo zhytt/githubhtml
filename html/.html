@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="warp">
+        <ul>
+            <li class="list">
+                <div class="hide"></div>
+                <p>我喜欢你 不只是喜欢</p>
+            </li>
+            <li class="list">
+                <div class="hide"></div>  
+                <p>我喜欢你 不只是喜欢</p>
+            </li>
+            <li class="list"> 
+                <div class="hide"></div>
+                 <p>我喜欢你 不只是喜欢</p>
+            </li>
+            <li class="list">
+           <div class="hide"></div>
+           <p>我喜欢你 不只是喜欢</p>
+            </li>
+        </ul>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(".list").hover(function(){
+          $(this).stop().animate({
+                width:"700px"
+          }, 500).siblings().stop().animate({
+            width:"100px"
+        },500)
+        });
+       
+    </script>
+</body>
+</html>
